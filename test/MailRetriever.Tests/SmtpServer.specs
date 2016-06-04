@@ -1,0 +1,21 @@
+﻿Developer should has framework for simple localhost smtp server.
+
+Narrative:
+    As a developer
+    I want to run smtp server from code
+    So that I can use that server in unit tests
+
+---
+Acceptance criteria
+
+Scenario 1: Server must process received email
+Given Developer has framework as a refenrence
+	And he enter localhost as a smtp server address
+	And he enter correct ports
+	And he didn't specify users in smtp server
+When He send an email from code
+Then Server has email on list of emails
+	And email has correct receipient addresses
+	And email has correct sender address
+	And email has correct body
+	And email has correct subject
