@@ -1,7 +1,6 @@
 # MailRetriever
-It is a simple SMTP server. It can be run in c# code. It was created for unit tests purposes (espacially BDD tests).
 
-You can run SMTP server by one line of code. After that server can inform you when specific email was retrieved. Server has also a list of all received messages.
+![Logo](images/logo.png) It is a simple SMTP server. It can be run in c# code. It was created for unit tests purposes (espacially BDD tests). You can run SMTP server by one line of code. After that server can inform you when specific email was retrieved. Server has also a list of all received messages.
 
 ```csharp
 
