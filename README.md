@@ -69,3 +69,5 @@ Example of usage in unit test:
 ```
 
 For sending email you can use MailKit which is also ASP.NET Core 1 compatible.
+
+AppVeyour status: [![Build status](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04?svg=true)](https://ci.appveyor.com/project/marcinczachurski/mailretriever)
