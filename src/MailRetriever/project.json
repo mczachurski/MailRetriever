@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.0-*",
+  "version": "1.0.1",
   "authors": [ "@mczachurski" ],
   "description": "It is a simple SMTP server. It can be run in c# code. It was created for unit tests purposes (espacially BDD tests). You can run SMTP server by one line of code. After that server can inform you when specific email was retrieved.",
   "title": "MailRetriever",
@@ -12,12 +12,12 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.5.0-rc2-24027",
-    "System.Threading.Thread": "4.0.0-rc3-24127-00"
+    "NETStandard.Library": "1.6.0",
+    "System.Threading.Thread": "4.0.0"
   },
 
   "frameworks": {
-    "netstandard1.5": {
+    "netstandard1.6": {
       "imports": [
         "dotnet5.6",
         "dnxcore50",
