@@ -176,8 +176,7 @@ namespace MailRetriever
 
         private void ProcessEndDataCommand(SocketAsyncEventArgs e, AsyncServerState asyncServerState)
         {
-            asyncServerState.IsProcessingData = false;
-            asyncServerState.EmailMessage.Body = asyncServerState.EmailContet.ToString();
+            FinishProcessingData(asyncServerState);
             Send(e, ServerCommands.Ok);
         }
 
@@ -218,8 +217,18 @@ namespace MailRetriever
 
         private void ProcessQuitCommand(SocketAsyncEventArgs e, AsyncServerState asyncServerState)
         {
+            FinishProcessingData(asyncServerState);
             EmailMessages.Add(asyncServerState.EmailMessage);
             Send(e, ServerCommands.Bye, true);
+        }
+
+        private void FinishProcessingData(AsyncServerState asyncServerState)
+        {
+            asyncServerState.IsProcessingData = false;
+            if (asyncServerState.EmailMessage.Body == null)
+            {
+                asyncServerState.EmailMessage.Body = asyncServerState.EmailContet.ToString();
+            }
         }
 
         private void ProcessAccept(SocketAsyncEventArgs e)
