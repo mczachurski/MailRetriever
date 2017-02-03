@@ -70,4 +70,10 @@ Example of usage in unit test:
 
 For sending email you can use MailKit which is also ASP.NET Core 1 compatible.
 
-AppVeyour status: [![Build status](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04?svg=true)](https://ci.appveyor.com/project/marcinczachurski/mailretriever)
+### AppVeyour status: 
+
+
+| branch  | status                                                                                                                                                                                        |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| master  | [![Build status](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04/branch/master?svg=true)](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04/branch/master?svg=true)   |
+| develop | [![Build status](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04/branch/develop?svg=true)](https://ci.appveyor.com/api/projects/status/x21xuu0dhahguo04/branch/develop?svg=true) |
